@@ -33,6 +33,22 @@ require("lazy").setup({
         {"saadparwaiz1/cmp_luasnip"},
         {"j-hui/fidget.nvim"},
         {"nvim-tree/nvim-tree.lua"},
+        {
+            "wallpants/github-preview.nvim",
+            cmd = { "GithubPreviewToggle" },
+            keys = { "<leader>mpt" },
+            opts = {},
+            config = function(_, opts)
+                local gpreview = require("github-preview")
+                gpreview.setup(opts)
 
+                local fns = gpreview.fns
+                vim.keymap.set("n", "<leader>mpt", fns.toggle)
+                vim.keymap.set("n", "<leader>mps", fns.single_file_toggle)
+                vim.keymap.set("n", "<leader>mpd", fns.details_tags_toggle)
+            end,
+        },
+        {'neovim/nvim-lspconfig'},
+        {'jose-elias-alvarez/null-ls.nvim'},
 })
 
