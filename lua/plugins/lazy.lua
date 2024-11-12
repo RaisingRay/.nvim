@@ -50,5 +50,6 @@ require("lazy").setup({
         },
         {'neovim/nvim-lspconfig'},
         {'jose-elias-alvarez/null-ls.nvim'},
+        {'windwp/nvim-ts-autotag'},
 })
 

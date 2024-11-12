@@ -6,4 +6,5 @@ require("config/lsp")
 require("config/tree")
 require("config/preview")
 require("config/format")
+require("config/autotag")
 
