@@ -7,4 +7,5 @@ require("config/tree")
 require("config/preview")
 require("config/format")
 require("config/autotag")
+require("config/soil")
 
