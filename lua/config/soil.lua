@@ -14,7 +14,7 @@ require'soil'.setup{
         -- return "feh " .. img
         -- return "xdg-open " .. img
         execute_to_open = function(img) 
-            return "nsxiv -b " .. img
+            return "display -b " .. img
         end
     }
 }
